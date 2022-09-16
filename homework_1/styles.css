@@ -1,0 +1,43 @@
+h1 {
+    color: white;
+  }
+h2 {
+    color: white;
+  }
+p {
+    color: white;
+  }
+ul {
+    color: white;
+  }
+a:link {
+    color: white;
+  }
+a:visited {
+    color: blueviolet;
+  }
+body {
+    background-color: black;
+  }
+h1 { text-align: center }
+h2 { text-align: center }
+h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+p {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+ul {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+a {
+    font-size: 1.5em;
+    font-weight: bold;
+}
