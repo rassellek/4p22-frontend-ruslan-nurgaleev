@@ -1,0 +1,166 @@
+/* || General setup */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  background-image: url('../images/background.jpg');
+  opacity: 0.95;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* || typography */
+
+h1,
+h2,
+h3 {
+  font-size: 90px;
+  line-height: 110%;
+  font-family: "Reaver", serif;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: #ffffffee;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 20px #000;
+}
+
+p,
+input,
+li,
+ul {
+  font-size: 30px;
+  line-height: 113%;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 0px 20px #000;
+}
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+p,
+li,
+table,
+tr,
+td {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  color: white;
+  text-shadow: 0px 0px 20px #000;
+}
+
+article,
+a {
+  font-size: 1.9rem;
+  line-height: 1.5;
+  text-shadow: 0px 0px 20px #000;
+}
+
+/* || header layout */
+
+nav,
+article,
+aside,
+footer {
+  background-color: transparent;
+  padding: 1%;
+}
+
+nav {
+  height: 120px;
+  background-color: transparent;
+  display: flex;
+  margin-bottom: -75px;
+}
+
+nav ul {
+  padding: 0;
+  list-style-type: none;
+  flex: 32;
+  display: flex;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  flex: 1;
+}
+
+nav a {
+  display: inline-block;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+nav form {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 2em;
+}
+
+input {
+  font-size: 1.6rem;
+  height: 32px;
+}
+
+input[type="search"] {
+  flex: 3;
+}
+
+input[type="submit"] {
+  flex: 1;
+  margin-left: 1rem;
+  background: #333;
+  border: 0;
+  color: white;
+}
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+article {
+  flex: 4;
+}
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  background-color: transparent;
+}
+
+aside li {
+  padding-bottom: 10px;
+}
+
+footer {
+  margin-top: 10px;
+}
