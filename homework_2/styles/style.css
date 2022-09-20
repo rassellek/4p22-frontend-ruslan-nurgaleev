@@ -85,6 +85,7 @@ article,
 aside,
 footer {
   background-color: transparent;
+  opacity: 0.85;
   padding: 1%;
 }
 
