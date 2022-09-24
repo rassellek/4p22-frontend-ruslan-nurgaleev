@@ -1,0 +1,91 @@
+h2 {
+    font-size: 30px;
+    text-align: center;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow:
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 32px #0fa,
+        0 0 64px #0fa,
+        0 0 128px #0fa;
+}
+
+ol {
+    line-height: 40px;
+}
+
+
+.link a {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 16px #0fa,
+        0 0 32px #0fa,
+        0 0 64px #0fa;
+}
+
+.link a:after {
+    display: block;
+    content: "";
+    height: 5px;
+    width: 0%;
+    background-color: yellow;
+    box-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 8px yellow,
+        0 0 16px yellow,
+        0 0 32px yellow;
+    transition: width 0.9s ease-in-out;
+}
+
+.link a:hover:after,
+.link a:focus:after {
+    width: 100%;
+}
+
+.link a:hover {
+    color: yellow;
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 16px yellow,
+        0 0 32px yellow,
+        0 0 64px yellow;
+}
+
+dl {
+    font-size: 20px;
+    text-align: left;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 16px #0fa,
+        0 0 32px #0fa,
+        0 0 64px #0fa;
+}
+
+dt {
+    font-style: italic;
+}
+
+.image {
+    float: right;
+    margin: 4px 10px 2px 0px;
+}
+
