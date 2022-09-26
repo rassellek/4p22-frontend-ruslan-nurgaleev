@@ -6,7 +6,7 @@ body {
     width: 90%;
     margin: 0 auto;
     zoom: 0.45;
-    }
+}
 
 table.fixed td {
     min-width: 100px;
@@ -15,7 +15,7 @@ table.fixed td {
 
 table.fixed {
     border-spacing: 15px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .fixed tr.first,
@@ -38,6 +38,23 @@ td {
     font-weight: bolder;
     color: white;
     font-size: 25px;
+}
+
+.button {
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1;
+    font-size: 50px;
+    text-align: left;
+    letter-spacing: 3px;
+    color: #fff;
+    text-shadow:
+        0 0 2px #fff,
+        0 0 4px #fff,
+        0 0 8px #fff,
+        0 0 16px #0fa,
+        0 0 32px #0fa,
+        0 0 64px #0fa;
 }
 
 .num_0 {
@@ -160,7 +177,8 @@ td {
 .container_1:hover {
     background-color: #500;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_2 {
@@ -222,7 +240,8 @@ td {
 .container_2:hover {
     background-color: #420;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_3 {
@@ -284,7 +303,8 @@ td {
 .container_3:hover {
     background-color: #550;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_4 {
@@ -346,7 +366,8 @@ td {
 .container_4:hover {
     background-color: #351;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_5 {
@@ -410,7 +431,8 @@ td {
 .container_5:hover {
     background-color: #055;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_6 {
@@ -469,12 +491,14 @@ td {
     width: 100px;
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
+
 }
 
 .container_6:hover {
     background-color: #005;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_7 {
@@ -538,7 +562,8 @@ td {
 .container_7:hover {
     background-color: #755;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_8 {
@@ -602,7 +627,8 @@ td {
 .container_8:hover {
     background-color: #505;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_9 {
@@ -666,7 +692,8 @@ td {
 .container_9:hover {
     background-color: #330;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
 }
 
 .num_10 {
@@ -730,5 +757,25 @@ td {
 .container_10:hover {
     background-color: #530;
     opacity: 1;
-    scale: 2.5;
+    -webkit-transform: scale(2.5);
+    transform: scale(2.5);
+}
+
+table a {
+    text-decoration: none;
+}
+
+iframe {
+    border: none;
+    background: none;
+    width: 100%;
+    height: 1000px;
+    align-items: center;
+}
+
+article {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 15px;
+    text-align: center;
 }
