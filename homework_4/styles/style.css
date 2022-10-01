@@ -179,7 +179,7 @@ h3 {
 }
 
 .container .card:after {
-    content: "NB";
+    content: 'NB';
     position: absolute;
     top: 40%;
     left: 15%;
