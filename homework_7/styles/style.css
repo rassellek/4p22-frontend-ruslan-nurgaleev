@@ -1,0 +1,440 @@
+@import './fonts.css';
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --backgrounf-color: #1B2473;
+    --button-color: #1A226B;
+    --text-color: #787878;
+    --placeholder-color: #CCCCCC;
+    --container-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--backgrounf-color);
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+@media screen and (min-width: 769px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: calc(92 / 1440 * 100vw);
+        left: calc(412 / 1440 * 100vw);
+        margin: 0 auto;
+        width: calc(600 / 1440 * 100vw);
+        height: calc(412 / 1440 * 100vw);
+        background: var(--container-color);
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+        border-radius: calc(20 / 1440 * 100vw);
+    }
+
+    .container__heading {
+        display: flex;
+        position: absolute;
+        top: calc(26 / 1440 * 100vw);
+        left: calc(242 / 1440 * 100vw);
+        font-size: calc(50 / 1440 * 100vw);
+        line-height: calc(50 / 1440 * 100vw);
+        color: var(--text-color);
+        caret-color: transparent;
+    }
+
+    .form__email {
+        display: flex;
+        position: absolute;
+        top: calc(112 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid var(--text-color);
+        border-radius: calc(10 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+    }
+
+    .form__email input {
+        border: none;
+        border-radius: 0;
+        outline: none;
+        padding: 0;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: var(--text-color);
+    }
+
+    .form__email input::placeholder {
+        color: var(--placeholder-color);
+        font-weight: 700;
+    }
+
+    .form__email label {
+        position: absolute;
+        top: calc(-27 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        opacity: 0;
+        transition: 0.2s;
+        caret-color: transparent;
+    }
+
+    .form__email input:focus+label,
+    .form__email input:not(:placeholder-shown)+label {
+        position: absolute;
+        opacity: 1;
+        top: calc(-27 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: var(--text-color);
+
+    }
+
+    .form__email input:focus::-webkit-input-placeholder {
+        color: transparent;
+        transition: 0.2s;
+    }
+
+    .form__password {
+        display: flex;
+        position: absolute;
+        top: calc(193 / 1440 * 100vw);
+        left: calc(45 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(49 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid var(--text-color);
+        border-radius: calc(10 / 1440 * 100vw);
+        padding-left: calc(15 / 1440 * 100vw);
+    }
+
+    .form__password input {
+        border: none;
+        border-radius: 0;
+        outline: none;
+        padding: 0;
+        font-size: calc(28 / 1440 * 100vw);
+        line-height: calc(36 / 1440 * 100vw);
+        color: var(--text-color);
+    }
+
+    .form__password input::placeholder {
+        color: var(--placeholder-color);
+        font-weight: 700;
+    }
+
+    .form__password label {
+        position: absolute;
+        top: calc(-27 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        opacity: 0;
+        transition: 0.2s;
+        caret-color: transparent;
+    }
+
+    .form__password input:focus+label,
+    .form__password input:not(:placeholder-shown)+label {
+        position: absolute;
+        opacity: 1;
+        top: calc(-27 / 1440 * 100vw);
+        left: calc(8 / 1440 * 100vw);
+        font-size: calc(16 / 1440 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: var(--text-color);
+
+    }
+
+    .form__password input:focus::-webkit-input-placeholder {
+        color: transparent;
+        transition: 0.2s;
+    }
+
+    .form__checkbox {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: calc(258 / 1440 * 100vw);
+        width: calc(510 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        caret-color: transparent;
+    }
+
+    .form__checkbox input {
+        position: absolute;
+        margin: 0 auto;
+        opacity: 0;
+        width: calc(26 / 1440 * 100vw);
+        height: calc(26 / 1440 * 100vw);
+    }
+
+    .form__checkbox label {
+        position: absolute;
+        padding-left: calc(34 / 1440 * 100vw);
+        font-size: calc(14 / 1440 * 100vw);
+        font-weight: 400;
+        line-height: calc(16 / 768 * 100vw);
+        color: var(--text-color);
+    }
+
+    .form__checkbox label::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(0 / 1440 * 100vw);
+        width: calc(24 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        border: calc(2 / 1440 * 100vw) solid var(--text-color);
+        border-radius: calc(7 / 1440 * 100vw);
+    }
+
+    .form__checkbox label::after {
+        content: '';
+        background: url(../images/check.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: calc(4 / 1440 * 100vw);
+        left: calc(6 / 1440 * 100vw);
+        width: calc(20 / 1440 * 100vw);
+        height: calc(24 / 1440 * 100vw);
+        opacity: 0;
+        transition: .2s;
+    }
+
+    .form__checkbox input:checked+label::after {
+        opacity: 1;
+    }
+
+    .form__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: calc(334 / 1440 * 100vw);
+        left: calc(210 / 1440 * 100vw);
+        width: calc(180 / 1440 * 100vw);
+        height: calc(52 / 1440 * 100vw);
+        border: none;
+        border-radius: calc(10 / 1440 * 100vw);
+        background: var(--button-color);
+        font-size: calc(24 / 1440 * 100vw);
+        font-weight: 700;
+        line-height: calc(16 / 1440 * 100vw);
+        color: var(--container-color);
+        caret-color: transparent;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: calc(20 / 768 * 100vw);
+        left: calc(20 / 768 * 100vw);
+        margin: 0 auto;
+        width: calc(728 / 768 * 100vw);
+        height: calc(697 / 768 * 100vw);
+        background: var(--container-color);
+        box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
+        border-radius: calc(20 / 768 * 100vw);
+    }
+
+    .container__heading {
+        display: flex;
+        position: absolute;
+        top: calc(38 / 768 * 100vw);
+        left: calc(288 / 768 * 100vw);
+        font-size: calc(60 / 768 * 100vw);
+        line-height: calc(50 / 768 * 100vw);
+        color: var(--text-color);
+        caret-color: transparent;
+    }
+
+    .form__email {
+        display: flex;
+        position: absolute;
+        top: calc(125 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(638 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid var(--text-color);
+        border-radius: calc(10 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+    }
+
+    .form__email input {
+        border: none;
+        border-radius: 0;
+        outline: none;
+        padding: 0;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: var(--text-color);
+    }
+
+    .form__email input::placeholder {
+        color: var(--placeholder-color);
+        font-weight: 700;
+    }
+
+    .form__email label {
+        position: absolute;
+        top: calc(-27 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        opacity: 0;
+        transition: 0.2s;
+        caret-color: transparent;
+    }
+
+    .form__email input:focus+label,
+    .form__email input:not(:placeholder-shown)+label {
+        position: absolute;
+        opacity: 1;
+        top: calc(-27 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: var(--text-color);
+
+    }
+
+    .form__email input:focus::-webkit-input-placeholder {
+        color: transparent;
+        transition: 0.2s;
+    }
+
+    .form__password {
+        display: flex;
+        position: absolute;
+        top: calc(211 / 768 * 100vw);
+        left: calc(45 / 768 * 100vw);
+        width: calc(638 / 768 * 100vw);
+        height: calc(49 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid var(--text-color);
+        border-radius: calc(10 / 768 * 100vw);
+        padding-left: calc(15 / 768 * 100vw);
+    }
+
+    .form__password input {
+        border: none;
+        border-radius: 0;
+        outline: none;
+        padding: 0;
+        font-size: calc(28 / 768 * 100vw);
+        line-height: calc(36 / 768 * 100vw);
+        color: var(--text-color);
+    }
+
+    .form__password input::placeholder {
+        color: var(--placeholder-color);
+        font-weight: 700;
+    }
+
+    .form__password label {
+        position: absolute;
+        top: calc(-27 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        opacity: 0;
+        transition: 0.2s;
+        caret-color: transparent;
+    }
+
+    .form__password input:focus+label,
+    .form__password input:not(:placeholder-shown)+label {
+        position: absolute;
+        opacity: 1;
+        top: calc(-27 / 768 * 100vw);
+        left: calc(8 / 768 * 100vw);
+        font-size: calc(24 / 768 * 100vw);
+        line-height: calc(16 / 768 * 100vw);
+        color: var(--text-color);
+
+    }
+
+    .form__password input:focus::-webkit-input-placeholder {
+        color: transparent;
+        transition: 0.2s;
+    }
+
+    .form__checkbox {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: calc(279 / 768 * 100vw);
+        width: calc(638 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+        caret-color: transparent;
+    }
+
+    .form__checkbox input {
+        position: absolute;
+        margin: 0 auto;
+        opacity: 0;
+        width: calc(32 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+    }
+
+    .form__checkbox label {
+        position: absolute;
+        padding-left: calc(87 / 1440 * 100vw);
+        font-size: calc(18 / 768 * 100vw);
+        font-weight: 400;
+        line-height: calc(16 / 768 * 100vw);
+        color: var(--text-color);
+    }
+
+    .form__checkbox label::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: calc(0 / 768 * 100vw);
+        width: calc(32 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+        border: calc(2 / 768 * 100vw) solid var(--text-color);
+        border-radius: calc(7 / 768 * 100vw);
+    }
+
+    .form__checkbox label::after {
+        content: '';
+        background: url(../images/check.png) no-repeat;
+        background-size: 100% 100%;
+        position: absolute;
+        top: calc(-6/ 768 * 100vw);
+        left: calc(6 / 768 * 100vw);
+        width: calc(30 / 768 * 100vw);
+        height: calc(32 / 768 * 100vw);
+        opacity: 0;
+        transition: 0.2s;
+    }
+
+    .form__checkbox input:checked+label::after {
+        opacity: 1;
+    }
+
+    .form__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: calc(375 / 768 * 100vw);
+        left: calc(254 / 768 * 100vw);
+        width: calc(220 / 768 * 100vw);
+        height: calc(80 / 768 * 100vw);
+        border: none;
+        border-radius: calc(10 / 768 * 100vw);
+        background: var(--button-color);
+        font-size: calc(32 / 768 * 100vw);
+        font-weight: 700;
+        line-height: calc(16 / 768 * 100vw);
+        color: var(--container-color);
+        caret-color: transparent;
+    }
+}
