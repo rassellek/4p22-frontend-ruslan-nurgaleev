@@ -335,11 +335,13 @@ body {
         position: absolute;
         margin: 0 auto;
         padding: 0;
+        left: 4px;
         top: 50%;
         transform: translateY(-50%);
-        left: calc(4 * var(--ratio-big));
-        width: calc(12 * var(--ratio-big));
-        height: calc(12 * var(--ratio-big));
+        padding: 0px;
+        width: calc(14 * var(--ratio-big));
+        height: calc(14 * var(--ratio-big));
+        border: none;
         border-radius: 50%;
         opacity: 0;
         transition: .2s;
@@ -401,7 +403,7 @@ body {
         padding: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: calc(4 * var(--ratio-big));
+        left: 5%;
         width: calc(12 * var(--ratio-big));
         height: calc(12 * var(--ratio-big));
         border-radius: 50%;
@@ -484,27 +486,20 @@ body {
 
     .container-form__checkbox label::before {
         content: '';
+        display: inline-block;
         position: absolute;
+        left: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: 0;
-        width: calc(20 * var(--ratio-big));
-        height: calc(20 * var(--ratio-big));
+        width: calc(16 * var(--ratio-big));
+        height: calc(16 * var(--ratio-big));
+        padding: calc(4 * var(--ratio-big));
         border: 2px solid var(--text-color);
+        background-clip: content-box;
     }
 
-    .container-form__checkbox label::after {
-        content: '';
+    .container-form__checkbox input:checked + label::before {
         background-color: var(--text-color);
-        background-size: 100% 100%;
-        position: absolute;
-        left: calc(6 * var(--ratio-big));
-        top: 50%;
-        transform: translateY(-50%);
-        width: calc(12 * var(--ratio-big));
-        height: calc(12 * var(--ratio-big));
-        opacity: 0;
-        transition: 0.2s;
     }
 
     .container-form__checkbox input:checked+label::after {
@@ -845,7 +840,7 @@ body {
         padding: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: calc(4 * var(--ratio-small));
+        left: 5%;
         width: calc(12 * var(--ratio-small));
         height: calc(12 * var(--ratio-small));
         border-radius: 50%;
@@ -909,7 +904,7 @@ body {
         padding: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: calc(4 * var(--ratio-small));
+        left: 5%;
         width: calc(12 * var(--ratio-small));
         height: calc(12 * var(--ratio-small));
         border-radius: 50%;
@@ -992,31 +987,20 @@ body {
 
     .container-form__checkbox label::before {
         content: '';
+        display: inline-block;
         position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
         left: 0;
-        width: calc(20 * var(--ratio-small));
-        height: calc(20 * var(--ratio-small));
-        border: 2px solid var(--text-color);
-    }
-
-    .container-form__checkbox label::after {
-        content: '';
-        background-color: var(--text-color);
-        background-size: 100% 100%;
-        position: absolute;
-        left: calc(6 * var(--ratio-small));
         top: 50%;
         transform: translateY(-50%);
-        width: calc(12 * var(--ratio-small));
-        height: calc(12 * var(--ratio-small));
-        opacity: 0;
-        transition: 0.2s;
+        width: calc(16 * var(--ratio-small));
+        height: calc(16 * var(--ratio-small));
+        padding: calc(4 * var(--ratio-small));
+        border: 2px solid var(--text-color);
+        background-clip: content-box;
     }
 
-    .container-form__checkbox input:checked+label::after {
-        opacity: 1;
+    .container-form__checkbox input:checked + label::before {
+        background-color: var(--text-color);
     }
 
     .container-form__button {
