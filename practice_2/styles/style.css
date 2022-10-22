@@ -1,0 +1,53 @@
+@import './fonts.css';
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --backgrounf-color: #1B2473;
+    --button-color: #1A226B;
+    --text-color: #787878;
+    --placeholder-color: #CCCCCC;
+    --container-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.custom-input{
+    position: relative;
+    color: black;
+    top: 100px;
+    left: 100px;
+}
+
+.custom-input label {
+    position: absolute;
+    font-size: 20px;
+    top: 20px;
+    left: 10px;
+    transition-duration: 0.4s;
+}
+
+.custom-input input {
+    outline: none;
+    height: 65px;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid saddlebrown;
+    border-radius: 8px;
+}
+
+.custom-input input:focus ~ label,
+.custom-input:not(:placeholder-shown) ~ label {
+    top: -22px;
+    font-size: 16px;
+    color: #666;
+    z-index: 10;
+    background-color: white;
+    transition-duration: 0.4s;
+}
