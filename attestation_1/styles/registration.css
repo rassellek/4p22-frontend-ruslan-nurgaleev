@@ -337,7 +337,7 @@ body {
         padding: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: 4px;
+        left: calc(4 * var(--ratio-big));
         width: calc(12 * var(--ratio-big));
         height: calc(12 * var(--ratio-big));
         border-radius: 50%;
@@ -401,7 +401,7 @@ body {
         padding: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: 4px;
+        left: calc(4 * var(--ratio-big));
         width: calc(12 * var(--ratio-big));
         height: calc(12 * var(--ratio-big));
         border-radius: 50%;
@@ -498,7 +498,7 @@ body {
         background-color: var(--text-color);
         background-size: 100% 100%;
         position: absolute;
-        left: 6px;
+        left: calc(6 * var(--ratio-big));
         top: 50%;
         transform: translateY(-50%);
         width: calc(12 * var(--ratio-big));
@@ -845,7 +845,7 @@ body {
         padding: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: 4px;
+        left: calc(4 * var(--ratio-small));
         width: calc(12 * var(--ratio-small));
         height: calc(12 * var(--ratio-small));
         border-radius: 50%;
@@ -909,7 +909,7 @@ body {
         padding: 0;
         top: 50%;
         transform: translateY(-50%);
-        left: 4px;
+        left: calc(4 * var(--ratio-small));
         width: calc(12 * var(--ratio-small));
         height: calc(12 * var(--ratio-small));
         border-radius: 50%;
@@ -1006,7 +1006,7 @@ body {
         background-color: var(--text-color);
         background-size: 100% 100%;
         position: absolute;
-        left: 6px;
+        left: calc(6 * var(--ratio-small));
         top: 50%;
         transform: translateY(-50%);
         width: calc(12 * var(--ratio-small));
