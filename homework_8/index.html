@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Руслан Нургалеев">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="Homework_8: calculator">
+    <meta name="og:image" content="./images/icom.png">
+    <title>Attestation_1</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="container__heading">
+            <h2>Упрощенный калькулятор</h2>
+        </div>
+
+        <form class="container-form" action="#">
+
+            <input class="container-form__first-number-input" id="first-number" name="first-number" placeholder="Введите первое число" autocomplete="off">
+            <label class="container-form__first-number-label" for="first-number">Первое число</label>
+
+            <input class="container-form__operation-input" id="operation" name="operation" placeholder="Введите знак операции (+, -, /, *)" autocomplete="off">
+            <label class="container-form__operation-label" for="operation">Знак операции</label>
+
+            <input class="container-form__second-number-input" id="second-number" name="second-number" placeholder="Введите второе число" autocomplete="off">
+            <label class="container-form__second-number-label" for="second-number">Второе число</label>
+
+            <button class="container-form__button" id="submit">Расчёт</button>
+
+        </form>
+
+        <div class="container-form__output" id="output"></div>
+
+    </div>
+
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>
