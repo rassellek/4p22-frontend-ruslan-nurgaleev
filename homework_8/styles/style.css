@@ -1,11 +1,11 @@
 @import './fonts.css';
-/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'DS Crystal', sans-serif; */
 
 :root {
-    --button-color: #1A226B;
-    --text-color: #787878;
+    --button-color: #66FCF1;
+    --text-color: #66FCF1;
     --placeholder-color: #CCCCCC;
-    --container-color: #FFFFFF;
+    --container-color: linear-gradient(45deg, #0B0C10 0%, #1F2833 100%);
     --ratio-big: calc(100vw / 1440);
     --ratio-small: calc(100vw / 768);
 }
@@ -43,7 +43,7 @@ body {
         justify-content: center;
         width: 100%;
         padding-bottom: calc(36 * var(--ratio-big));
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(36 * var(--ratio-big));
         line-height: calc(50 * var(--ratio-big));
@@ -59,15 +59,16 @@ body {
         height: calc(49 * var(--ratio-big));
         border: calc(2 * var(--ratio-big)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-big));
         line-height: calc(36 * var(--ratio-big));
+        background: var(--container-color);
         color: var(--text-color);
     }
 
     .container-form__first-number-input::placeholder {
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-big));
         line-height: calc(36 * var(--ratio-big));
@@ -82,7 +83,7 @@ body {
         transform: translateY(-50%);
         padding-left: calc(8 * var(--ratio-big));
         opacity: 0;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(16 * var(--ratio-big));
         line-height: calc(16 / 768 * 100vw);
@@ -110,15 +111,16 @@ body {
         height: calc(49 * var(--ratio-big));
         border: calc(2 * var(--ratio-big)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-big));
         line-height: calc(36 * var(--ratio-big));
+        background: var(--container-color);
         color: var(--text-color);
     }
 
     .container-form__operation-input::placeholder {
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-big));
         line-height: calc(36 * var(--ratio-big));
@@ -133,7 +135,7 @@ body {
         transform: translateY(-50%);
         padding-left: calc(8 * var(--ratio-big));
         opacity: 0;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(16 * var(--ratio-big));
         line-height: calc(16 / 768 * 100vw);
@@ -161,15 +163,16 @@ body {
         height: calc(49 * var(--ratio-big));
         border: calc(2 * var(--ratio-big)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-big));
         line-height: calc(36 * var(--ratio-big));
+        background: var(--container-color);
         color: var(--text-color);
     }
 
     .container-form__second-number-input::placeholder {
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-big));
         line-height: calc(36 * var(--ratio-big));
@@ -184,7 +187,7 @@ body {
         transform: translateY(-50%);
         padding-left: calc(8 * var(--ratio-big));
         opacity: 0;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(16 * var(--ratio-big));
         line-height: calc(16 / 768 * 100vw);
@@ -213,7 +216,7 @@ body {
         height: calc(52 * var(--ratio-big));
         border: none;
         background: var(--button-color);
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(24 * var(--ratio-big));
         line-height: calc(16 * var(--ratio-big));
@@ -229,7 +232,7 @@ body {
         height: calc(98 * var(--ratio-big));
         border: calc(2 * var(--ratio-big)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-big));
         line-height: calc(36 * var(--ratio-big));
@@ -258,7 +261,7 @@ body {
         justify-content: center;
         width: 100%;
         padding-bottom: calc(36 * var(--ratio-small));
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(36 * var(--ratio-small));
         line-height: calc(50 * var(--ratio-small));
@@ -274,15 +277,16 @@ body {
         height: calc(49 * var(--ratio-small));
         border: calc(2 * var(--ratio-small)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-small));
         line-height: calc(36 * var(--ratio-small));
+        background: var(--container-color);
         color: var(--text-color);
     }
 
     .container-form__first-number-input::placeholder {
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-small));
         line-height: calc(36 * var(--ratio-small));
@@ -297,7 +301,7 @@ body {
         transform: translateY(-50%);
         padding-left: calc(8 * var(--ratio-small));
         opacity: 0;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(16 * var(--ratio-small));
         line-height: calc(16 / 768 * 100vw);
@@ -325,15 +329,16 @@ body {
         height: calc(49 * var(--ratio-small));
         border: calc(2 * var(--ratio-small)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-small));
         line-height: calc(36 * var(--ratio-small));
+        background: var(--container-color);
         color: var(--text-color);
     }
 
     .container-form__operation-input::placeholder {
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-small));
         line-height: calc(36 * var(--ratio-small));
@@ -348,7 +353,7 @@ body {
         transform: translateY(-50%);
         padding-left: calc(8 * var(--ratio-small));
         opacity: 0;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(16 * var(--ratio-small));
         line-height: calc(16 / 768 * 100vw);
@@ -376,15 +381,16 @@ body {
         height: calc(49 * var(--ratio-small));
         border: calc(2 * var(--ratio-small)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-small));
         line-height: calc(36 * var(--ratio-small));
+        background: var(--container-color);
         color: var(--text-color);
     }
 
     .container-form__second-number-input::placeholder {
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-small));
         line-height: calc(36 * var(--ratio-small));
@@ -399,7 +405,7 @@ body {
         transform: translateY(-50%);
         padding-left: calc(8 * var(--ratio-small));
         opacity: 0;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(16 * var(--ratio-small));
         line-height: calc(16 / 768 * 100vw);
@@ -428,7 +434,7 @@ body {
         height: calc(52 * var(--ratio-small));
         border: none;
         background: var(--button-color);
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(24 * var(--ratio-small));
         line-height: calc(16 * var(--ratio-small));
@@ -444,7 +450,7 @@ body {
         height: calc(98 * var(--ratio-small));
         border: calc(2 * var(--ratio-small)) solid var(--text-color);
         outline: none;
-        font-family: 'Roboto';
+        font-family: 'DS Crystal';
         font-weight: 700;
         font-size: calc(28 * var(--ratio-small));
         line-height: calc(36 * var(--ratio-small));

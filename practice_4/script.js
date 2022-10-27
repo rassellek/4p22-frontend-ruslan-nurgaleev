@@ -105,3 +105,18 @@
 // }
 
 // sayHelloToUser('Иван', 'Петров');
+
+//################Области видимости:
+
+// // Возвращаемые значения: 'return'
+
+// function sayHello() {
+//     console.log('Hello World!');
+// }
+
+// function getSum(a, b){
+//     return a + b;
+// }
+
+// const sum = getSum(4, 9);
+// console.log(sum);

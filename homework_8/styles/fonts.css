@@ -15,3 +15,9 @@
     font-weight: 700;
     src: url(../fonts/Inter-Bold.ttf);
 }
+
+@font-face {
+    font-family: 'DS Crystal';
+    font-weight: 700;
+    src: url(../fonts/ds-crystal.ttf);
+}
