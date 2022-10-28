@@ -11,10 +11,12 @@ button.addEventListener('click', (event) => {
 
     event.preventDefault();
 
-    if (firstNumber == '') { console.log('Первое число не указано'); return output.innerText = 'Первое число не указано'; }
+    if ((firstNumber == '') || (String(firstNumber).trim() === '')) 
+    { console.log('Первое число не указано'); return output.innerText = 'Первое число не указано'; }
 
-    if (secondNumber == '') { console.log('Второе число не указано'); return output.innerText = 'Второе число не указано'; }
-
+    if ((secondNumber == '') || (String(secondNumber).trim() === '')) 
+    { console.log('Второе число не указано'); return output.innerText = 'Второе число не указано'; }
+   
     if (isNaN(firstNumber) || isNaN(secondNumber)) { console.log('Некорректный ввод чисел'); return output.innerText = 'Некорректный ввод чисел'; }
 
     switch (operation) {
