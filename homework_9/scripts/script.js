@@ -1,15 +1,17 @@
 "use strict";
 
-const fibonacci = (
-  (last = -1, next = 1) =>
-  () => {
+const fibonacci = (() => {
+  let last = -1,
+    next = 1;
+
+  return () => {
     const result = last + next;
     last = next;
     next = result;
     console.log(result);
     return result;
-  }
-)();
+  };
+})();
 
 fibonacci(); // Вывод в консоль: 0
 fibonacci(); // Вывод в консоль: 1
