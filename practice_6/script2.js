@@ -142,3 +142,141 @@ console.log(arr3);
 // splice - вырезать и изменить массив с "индекса" в "количестве"
 arr2.splice(1, 2);
 console.log(arr2); 
+
+// filter - фильтрация массива - возвращает новый массив, удовлетворяющий условиям.
+
+// Фильтрация по индексу (см. ниже)
+function deleteFromArray(array = [], index = 0) {
+    return array.filter((item, innerIndex) => {
+        return index !== innerIndex;
+    });
+}
+
+// ***с помощью Lambda
+
+function deleteFromArray(array = [], index = 0) {
+    return array.filter((item, innerIndex) => index !== innerIndex);
+}
+
+
+const chelseaSquad = [
+    {
+        firstName:'Kepa',
+        lastName: 'Arrizabalaga'
+    },
+    {
+        firstName:'Reece',
+        lastName: 'James'      
+    },
+    {
+        firstName:'Cesar',
+        lastName: 'Azpilicueta'      
+    }
+];
+
+const filteredArray = chelseaSquad.filter((item, index, array) => {  //функция без параметров - колбэк
+// Функция выполняется для каждого элемента
+// В filteredArray попадут те элементы, где функция вернула true.
+
+    return item.lastName[0] === 'A'; // третья буква а
+}); 
+console.log(filteredArray);
+
+// Фильтрация по индексу с помощью функции deleteFromArray
+const changedArray = deleteFromArray(chelseaSquad, 1);
+console.log(changedArray);
+
+// map - возвращает переформированный массив
+
+const changedArray2 = chelseaSquad.map((item) => {
+    return {
+        name: item.firstName,
+        surname: item.lastName
+    }
+});
+console.log(changedArray2);
+
+const changedArray3 = chelseaSquad.map((item) => { 
+    return `${item.firstName} ${item.lastName}`
+});
+
+console.log(changedArray3);
+
+const changedArray4 = chelseaSquad.map((item, index) => {
+    return {
+        // firstName: item.firstName,
+        // lastName: item.lastName,
+        ...item, //с помощью spread заменяем копирование полностью объекта
+        id: index
+    }
+});
+console.log(changedArray4);
+
+// reduce - обработка каждого элемента с сохранением результата
+
+const reducedArray = chelseaSquad.reduce((accumulator, item, index) => {
+
+    let resString = `${item.firstName} ${item.lastName}`
+
+    if (index === resString.length - 1) { //############ КАК ПРАВИЛЬНО
+        resString += ', ';
+    }
+    
+    accumulator += resString;
+
+    return accumulator;
+
+}, ''); //0 {} [] ''
+
+console.log(reducedArray);
+
+const arrNumbers = [
+    {
+        x: 5,
+        y: 10
+    },
+    {
+        x: 15,
+        y: 20
+    },
+    {
+        x: 39,
+        y: 27
+    }
+];
+// Считаем (x0 + y0) * (x1 + y1) * (x2 + y2)
+const result = arrNumbers.reduce((accumulator, item, index, array) => {
+accumulator *= (item.x + item.y);
+// Необходимо вернуть новое значение аккумулятора
+return accumulator;
+}, 1);// Начальное значение аккумулятора после функции
+
+console.log(result);
+
+
+// УБРАТЬ ПОВТОРЫ СОХРАНИВ МАССИВ
+
+const arr4 = ['банан', 'яблоко', 'яблоко'];
+
+const result2 = Object.keys(arr4.reduce((acc, item) => {
+    
+    acc[item] = '';
+    
+    return acc;
+
+}, {}));
+
+console.log(result2); 
+
+
+// ПОДСЧЕТ ПОВТОРОВ
+
+const result3 = arr4.reduce((acc, item) => {
+    
+    acc[item] = acc[item] ? acc[item] += 1 : 1;
+    
+    return acc;
+
+}, {});
+
+console.log(result3); 
