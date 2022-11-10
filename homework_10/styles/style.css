@@ -1,0 +1,59 @@
+@import './fonts.css';
+/* font-family: 'Roboto', sans-serif; */
+
+:root {
+    --button-color: #1A226B;
+    --text-color: #555555;
+    --ratio-big: calc(100vw / 1440);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--container-color);
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: calc(36 * var(--ratio-big));
+    color: var(--text-color);
+    margin: auto 50px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: calc(22 * var(--ratio-big));
+    line-height: calc(24 * var(--ratio-big));
+    color: var(--text-color);
+    margin: auto 50px;
+}
+
+
+button {
+    margin: calc(50 * var(--ratio-big));
+    width: calc(150 * var(--ratio-big));
+    height: calc(50 * var(--ratio-big));
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: calc(20 * var(--ratio-big));
+    line-height: calc(24 * var(--ratio-big));
+    color: var(--text-color);
+    caret-color: transparent;
+}
+
+ul, pre, div {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: calc(14 * var(--ratio-big));
+    line-height: calc(24 * var(--ratio-big));
+    color: var(--text-color);
+    margin: auto 50px;
+    list-style-type: none;
+}
