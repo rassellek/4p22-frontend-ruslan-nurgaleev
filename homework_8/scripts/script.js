@@ -11,12 +11,12 @@ button.addEventListener("click", (event) => {
 
   event.preventDefault();
 
-  if (firstNumber == "" || String(firstNumber).trim() === "") {
+  if (firstNumber.trim() === "") {
     console.log("Первое число не указано");
     return (output.innerText = "Первое число не указано");
   }
 
-  if (secondNumber == "" || String(secondNumber).trim() === "") {
+  if (secondNumber.trim() === "") {
     console.log("Второе число не указано");
     return (output.innerText = "Второе число не указано");
   }
