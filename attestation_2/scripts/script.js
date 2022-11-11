@@ -1,5 +1,8 @@
 "use strict";
 
+const errorColor = "#EE2424";
+const correctColor = "#787878";
+
 const emailOutput = document.getElementById("email-output");
 const emailBorder = document.getElementById("email");
 const passwordOutput = document.getElementById("password-output");
@@ -11,6 +14,9 @@ const userData = {
   email: "",
   password: "",
   confirmation: "",
+  radio: "",
+  textarea: "",
+  checkbox: "",
 };
 
 const form = document.getElementById("form");
@@ -29,40 +35,44 @@ form.addEventListener("submit", (event) => {
   const email = formData.get("email");
   const password = formData.get("password");
   const confirmation = formData.get("confirmation");
+  const radio = formData.get("gender-radio-group");
+  const textarea = formData.get("textarea");
+  const checkbox = formData.get("check");
+
   let isValid = true;
 
   if (email.trim() === "") {
-    emailBorder.style.borderColor = "#EE2424";
+    emailBorder.style.borderColor = errorColor;
     emailOutput.innerText = "Поле обязательно для заполнения";
     isValid = false;
   } else if (!validateEmail(email)) {
-    emailBorder.style.borderColor = "#EE2424";
+    emailBorder.style.borderColor = errorColor;
     emailOutput.innerText = "Email введён некорректно";
     isValid = false;
   } else {
-    emailBorder.style.borderColor = "#787878";
+    emailBorder.style.borderColor = correctColor;
     emailOutput.innerText = "";
   }
 
   if (password.trim() === "") {
-    passwordBorder.style.borderColor = "#EE2424";
+    passwordBorder.style.borderColor = errorColor;
     passwordOutput.innerText = "Поле обязательно для заполнения";
     isValid = false;
   } else if (password.length < 8) {
-    passwordBorder.style.borderColor = "#EE2424";
+    passwordBorder.style.borderColor = errorColor;
     passwordOutput.innerText = "Пароль должен содержать не менее 8 символов";
     isValid = false;
   } else {
-    passwordBorder.style.borderColor = "#787878";
+    passwordBorder.style.borderColor = correctColor;
     passwordOutput.innerText = "";
   }
 
   if (confirmation.trim() === "" || confirmation !== password) {
-    confirmationBorder.style.borderColor = "#EE2424";
+    confirmationBorder.style.borderColor = errorColor;
     confirmationOutput.innerText = "Пароли не совпадают";
     isValid = false;
   } else {
-    confirmationBorder.style.borderColor = "#787878";
+    confirmationBorder.style.borderColor = correctColor;
     confirmationOutput.innerText = "";
   }
 
@@ -70,6 +80,9 @@ form.addEventListener("submit", (event) => {
     userData.email = email;
     userData.password = password;
     userData.confirmation = confirmation;
+    userData.radio = radio;
+    userData.textarea = textarea;
+    userData.checkbox = checkbox;
     console.log(userData);
   }
 });
