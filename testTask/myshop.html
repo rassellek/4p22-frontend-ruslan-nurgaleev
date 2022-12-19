@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Руслан Нургалеев">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="work5">
+    <title>testTask:myShops</title>
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row flex-nowrap">
+            <div class="col-auto col-md-3 ps-0 bg-white">
+                <div class="d-flex flex-column align-items-start min-vh-100 ">
+                    <a href="#" class="d-flex align-items-center mx-3 my-3">
+                        <img src="./images/menu.png" class="img-fluid d-none d-sm-inline" alt="...">
+                    </a>
+                    <ul class="nav d-flex flex-column mb-sm-auto" id="menu">
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="./index.html" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-house"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Главная</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-cart3"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Мои магазины</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-megaphone"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Промоматериалы</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-pie-chart"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Статистика</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-wallet"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Баланс</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-person"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Персональные
+                                    данные</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-question-circle"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">FAQ</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-headset"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Техподдержка</span>
+                            </a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="link-active"></span>
+                                <i class="fs-4 ms-3 bi-box-arrow-right"></i>
+                                <span class="ms-3 d-none d-sm-inline fw-bold">Выход</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col py-3 background-gray">
+                <div class="mb-5">
+                    <nav class="navbar">
+                        <div class="container-fluid justify-content-start">
+                            <a href="./index.html" class="nav-link d-flex align-items-center px-0">
+                                <span class="ms-3 d-none d-sm-inline fw-bold fs-6">Главная</span>
+                            </a>
+                            <span class="ms-1 d-none d-sm-inline fw-bold fs-6">></span>
+                            <a href="#" class="nav-link d-flex align-items-center px-0">
+                                <span class="ms-1 d-none d-sm-inline fw-bold fs-6">Мои магазины</span>
+                            </a>
+                        </div>
+                    </nav>
+                    <div class="userContainer mt-3">
+                        <div class="mail"><i class="fs-4 bi-envelope-fill"></i></div>
+                        <div class="user mx-3"><img src="./images/user.png" class="rounded-circle d-sm-inline "
+                                alt="..." width="40px"><span class="ms-3 d-sm-inline fw-bold">Максим
+                                Добжанский</span></div>
+                    </div>
+                </div>
+                <div>
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mt-5 ms-5 fw-bold" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">
+                        + Создать свой магазин
+                    </button>
+
+                    <!-- Modal -->
+                    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Создать магазин</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form class="d-md-flex d-inline justify-content-between row" id="form">
+                                        <div class="form-group col-md-6 col-12">
+                                            <label for="pattern" class="fw-bold">Шаблон</label>
+                                            <select class="form-select text-secondary mb-3 form-select-sm" id="pattern"
+                                                name="pattern">
+                                                <option selected>Стандартный</option>
+                                                <option value="Расширенный">Расширенный</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-md-6 col-12">
+                                            <label for="theme" class="fw-bold">Цветовая схема</label>
+                                            <select class="form-select text-secondary mb-3 form-select-sm" id="theme"
+                                                data-width="100%" name="theme">
+                                                <option selected>Классическая</option>
+                                                <option value="Тёмная">Тёмная</option>
+                                                <option value="Светлая">Светлая</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col-12">
+                                            <label for="formControlInput1" class="fw-bold">Домен</label>
+                                            <div class="d-flex position-relative">
+                                                <input type="text"
+                                                    class="form-control text-secondary mb-3 form-select-sm themeInput"
+                                                    id="confirmation" name="confirmation"
+                                                    placeholder="Например: ivangrozniy">
+                                                <div class="after">.work5.ru</div>
+                                                <div class="confirmation-output" id="confirmation-output"></div>
+                                            </div>
+                                        </div>
+                                        <div class="info d-flex">
+                                            <div><img src="./images/info.png" class="img-fluid d-sm-inline" alt="..."
+                                                    width="100px"></div>
+                                            <div class="text-secondary ms-3">В названии домена разрешены латиница и “-”,
+                                                запрещается использовать словосочетание Work 5. После создания магазина
+                                                Вы
+                                                сможете прикрутить свой домен (например ivangrozniy.ru). Подробнее по <a
+                                                    href="#" class="text-decoration-none">ссылке</a></div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary btn-w"
+                                                data-bs-dismiss="modal">Отмена</button>
+                                            <button class="btn btn-primary btn-w" id="submit">Создать</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid ms-md-5 ms-4 mt-1 mt-md-3 fw-bold fs-md-5 fs-5 shop">
+                        <div class="d-none d-md-flex">Управление магазинами</div>
+                        <div class="shopsContainer">
+                            <div class="num">№</div>
+                            <div class="pattern">Шаблон</div>
+                            <div class="theme">Цветовая схема</div>
+                            <div class="adress">Адрес</div>
+                            <div class="action">Действие</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

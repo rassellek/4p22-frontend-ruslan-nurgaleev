@@ -1,0 +1,240 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.userContainer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 5%;
+  right: 5%;
+  .mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #7e7e7e;
+    border-radius: 10%;
+    color: #7e7e7e;
+  }
+  .user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 50px;
+    color: #7e7e7e;
+    background-color: white;
+    font-size: 12px;
+  }
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.nav-item a {
+  position: relative;
+  color: #7e7e7e;
+  text-decoration: none;
+}
+
+.nav-item a:hover {
+  color: #313131;
+}
+
+.nav-item a:focus {
+  color: #313131;
+}
+
+.link-active {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background-clip: content-box;
+  border: 2px solid #6666d0;
+  opacity: 0;
+}
+
+.nav-item a:hover > .link-active {
+  opacity: 1;
+}
+
+.nav-item a:focus > .link-active {
+  opacity: 1;
+}
+
+.nav-item a:hover > i {
+  color: #6666d0;
+}
+
+.nav-item a:focus > i {
+  color: #6666d0;
+}
+
+.background-gray {
+  background-color: #f7faff;
+}
+
+.btn-primary {
+  background-color: #00ca77;
+  border: none;
+}
+
+.info > div {
+  font-size: 12px;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
+
+.btn-w {
+  width: 25%;
+}
+
+.themeInput {
+  border: none;
+  background-color: #e7e7ea;
+  color: #848484;
+}
+
+.after {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  right: 0%;
+  height: 30px;
+  background-color: #6666d0;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.confirmation-output {
+  position: absolute;
+  transform: translateY(-100%);
+  right: 0;
+  text-align: right;
+  opacity: 1;
+  color: red;
+  transition: 0.2s;
+  caret-color: transparent;
+}
+
+@media screen and (min-width: 769px) {
+  .shopsContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    div {
+      display: flex;
+      justify-content: start;
+    }
+    .num {
+      width: 10%;
+    }
+    .pattern {
+      width: 15%;
+    }
+    .theme {
+      width: 15%;
+    }
+    .adress {
+      width: 45%;
+    }
+    .adressSelect {
+      width: 45%;
+    }
+    .action {
+      width: 15%;
+    }
+    input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
+      font-size: 10px;
+      height: 30px;
+      padding: 0;
+    }
+  }
+
+  .op {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .shopsContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    margin-top: 25px;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    div {
+      display: flex;
+      justify-content: start;
+    }
+    .num {
+      width: 10%;
+    }
+    .pattern {
+      width: 15%;
+      display: none;
+    }
+    .theme {
+      width: 15%;
+      display: none;
+    }
+    .adress {
+      width: 75%;
+    }
+    .patternSelect {
+      width: 15%;
+      display: none;
+    }
+    .themeSelect {
+      width: 15%;
+      display: none;
+    }
+    .adressSelect {
+      width: 75%;
+    }
+    .action {
+      width: 15%;
+    }
+    input {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15%;
+      font-size: 10px;
+      height: 30px;
+      padding: 0;
+    }
+  }
+
+  .op {
+    opacity: 1;
+  }
+}
